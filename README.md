@@ -2,6 +2,26 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Reflection
+
+
+### Describe the effect each of the P, I, D components had in your implementation.
+
+P component directly reduces CTE, it's effective, but making a car move in zig-zag way.
+
+I component is for keeping a car stable.
+
+D component makes a car move more smoothly.
+
+
+### Describe how the final hyperparameters were chosen.
+
+The paramators are chose manually.
+
+- 1, finding the best paramator only by P control itself (0.05, 0.1, 0.2, 0.3, 0.4, 0.5), chosen based on the distance a car made in simulator
+- 2, increase Kd from (0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6), found 0.5 
+- 3, tuning Ki from (0.0001, 0.001, 0.05, 0.1), found 0.001
+
 
 ## Dependencies
 
